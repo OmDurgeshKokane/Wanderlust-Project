@@ -32,10 +32,10 @@
 
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
-        <% if (!currentUser) { %>
+        <% if (!User) { %>
         <a class="nav-link" href="/signUp"><b>Sign Up</b></a>
         <a class="nav-link" href="/login"><b>Log in</b></a>
-        <% } %> <% if (currentUser) { %>
+        <% } %> <% if (User) { %>
         <a class="nav-link" href="/logout"><b>Log out</b></a>
         <% } %>
       </div>
